@@ -26,6 +26,12 @@ Application built and deployed using Docker
 - Allows deployment to various environments such as EC2, ECS, Kubernetes
 - Can use secure docker images with only minimum installation required to run, no root etc
 
+##### Backend-For-Frontend
+Application focused on APIs for frontend applications. Could be it's own application, or combined with other application (e.g. under a `/ui/**` endpoint)
+- Combine multiple requests across multiple endpoints into one for frontend
+- Tailor responses to frontend without modifying backend APIs
+- Tailor permissions and validation/checks to frontend, keeping all frontend logic separate
+
 ##### API nodes
 Nodes for API application.
 - Might be single monolith application, or smaller microservices based on domain e.g. packages-api, user-api
