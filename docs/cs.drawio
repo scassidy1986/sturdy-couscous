@@ -5,10 +5,10 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="qHCFgXvhmrzMCmFW_h6j-32" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="10" y="360" width="809" height="809" as="geometry" />
+          <mxGeometry x="10" y="310" width="859" height="859" as="geometry" />
         </mxCell>
         <mxCell id="qHCFgXvhmrzMCmFW_h6j-31" value="API Nodes&lt;div style=&quot;text-align: left;&quot;&gt;- API application nodes&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Deployed to auto-scaling-group or equivalent&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ for load balancing and failover&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="20" y="490" width="290" height="290" as="geometry" />
+          <mxGeometry x="20" y="550" width="290" height="230" as="geometry" />
         </mxCell>
         <mxCell id="qHCFgXvhmrzMCmFW_h6j-21" value="Datastore&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Postgres&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; - 1 or more read replicas&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Hot standby for failover of instance / upgrades&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;for failover&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="130" y="930" width="180" height="80" as="geometry" />
@@ -47,12 +47,12 @@
           <mxGeometry x="130" y="1040" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="qHCFgXvhmrzMCmFW_h6j-40" value="Amazon API Gateway" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.api_gateway;" vertex="1" parent="1">
-          <mxGeometry x="340" y="110" width="80" height="110" as="geometry" />
+          <mxGeometry x="360.19" y="130" width="80" height="110" as="geometry" />
         </mxCell>
         <mxCell id="qHCFgXvhmrzMCmFW_h6j-41" value="Application Load Balancer" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.application_load_balancer;" vertex="1" parent="1">
-          <mxGeometry x="125" y="370" width="80" height="110" as="geometry" />
+          <mxGeometry x="125" y="320" width="80" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="qHCFgXvhmrzMCmFW_h6j-42" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-41" target="qHCFgXvhmrzMCmFW_h6j-40">
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-42" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-54" target="qHCFgXvhmrzMCmFW_h6j-40">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="120" y="610" as="sourcePoint" />
             <mxPoint x="220" y="510" as="targetPoint" />
@@ -76,17 +76,84 @@
             <mxPoint x="220" y="510" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qHCFgXvhmrzMCmFW_h6j-49" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-28">
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-49" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.8;entryY=0.8;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-28" target="qHCFgXvhmrzMCmFW_h6j-31">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="280" y="880" as="sourcePoint" />
             <mxPoint x="180" y="810" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qHCFgXvhmrzMCmFW_h6j-50" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
-          <mxGeometry x="500" y="370" width="80" height="100" as="geometry" />
+          <mxGeometry x="526.19" y="320" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="qHCFgXvhmrzMCmFW_h6j-51" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S3 for object storage&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Storage of packages in S3&lt;/div&gt;&lt;div&gt;- Reference to package stored in datastore&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="590" y="370" width="210" height="100" as="geometry" />
+          <mxGeometry x="616.19" y="320" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-52" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
+          <mxGeometry x="440.19" y="320" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-53" value="API Gateway&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Single entry point for all API requests&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Central point for auth / rate limiting&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Could be cloud provided or third party (Kong etc)&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="130" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-54" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/browser-128.png" vertex="1" parent="1">
+          <mxGeometry x="741" y="10" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-55" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-41" target="qHCFgXvhmrzMCmFW_h6j-40">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="239" y="234" as="sourcePoint" />
+            <mxPoint x="360" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-56" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-57" value="UI&lt;div style=&quot;text-align: left;&quot;&gt;- UI for developers / admins&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Allow package management via webpage&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="10" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-62" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" vertex="1" parent="1">
+          <mxGeometry x="10" y="30" width="125" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-63" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.995;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-62" target="qHCFgXvhmrzMCmFW_h6j-40">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="154" y="84" as="sourcePoint" />
+            <mxPoint x="280" y="190" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-64" value="&lt;div style=&quot;&quot;&gt;Public API&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- API to allow programmatic access / management of packages by developers / admins&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-&amp;nbsp;Allow developers to create new tools / integrations&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="10" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-65" value="Backend-for-Frontend" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="20" y="430" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-66" value="Public API" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="180" y="430" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-67" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.4;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-65" target="qHCFgXvhmrzMCmFW_h6j-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="280" as="sourcePoint" />
+            <mxPoint x="40" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-68" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.4;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-66" target="qHCFgXvhmrzMCmFW_h6j-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="453" as="sourcePoint" />
+            <mxPoint x="135" y="417" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-69" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.625;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-66" target="qHCFgXvhmrzMCmFW_h6j-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="453" as="sourcePoint" />
+            <mxPoint x="215" y="421" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-70" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.4;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-65" target="qHCFgXvhmrzMCmFW_h6j-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="564" as="sourcePoint" />
+            <mxPoint x="211" y="606" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-71" value="&lt;div style=&quot;&quot;&gt;&quot;Public&quot; API Nodes&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Applications that serve content and requests for public facing points (UI and API)&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="334.50000000000006" y="440" width="210" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
