@@ -1,11 +1,17 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="X0JvL7DTKHgV-wE9UcLp">
-    <mxGraphModel dx="892" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1858" dy="1048" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="qHCFgXvhmrzMCmFW_h6j-21" value="Datastore&lt;br style=&quot;font-size: 10px;&quot;&gt;- Postgres with 1 or more read replicas&lt;div style=&quot;text-align: left;&quot;&gt;- Hot standby for failover of instance&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="120" y="930" width="190" height="30" as="geometry" />
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-32" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="10" y="360" width="809" height="809" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-31" value="API Nodes&lt;div style=&quot;text-align: left;&quot;&gt;- API application nodes&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Deployed to auto-scaling-group or equivalent&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ for load balancing and failover&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="20" y="490" width="290" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-21" value="Datastore&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Postgres&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; - 1 or more read replicas&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Hot standby for failover of instance / upgrades&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;for failover&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="130" y="930" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="qHCFgXvhmrzMCmFW_h6j-23" value="Amazon RDS" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.rds;" vertex="1" parent="1">
           <mxGeometry x="40" y="920" width="80" height="100" as="geometry" />
@@ -13,11 +19,74 @@
         <mxCell id="qHCFgXvhmrzMCmFW_h6j-24" value="Amazon ElastiCache" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.elasticache;" vertex="1" parent="1">
           <mxGeometry x="40" y="1040" width="80" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="qHCFgXvhmrzMCmFW_h6j-25" value="Cache&lt;br style=&quot;font-size: 10px;&quot;&gt;- Redis in clustered mode to allow scaling&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="120" y="1040" width="190" height="30" as="geometry" />
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-25" value="Cache&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Redis in clustered mode to allow scaling&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;for failover&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1040" width="180" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="qHCFgXvhmrzMCmFW_h6j-27" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-28" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="880" width="300" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-29" value="Amazon Elasticsearch Service" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.elasticsearch_service;" vertex="1" parent="1">
+          <mxGeometry x="410" y="920" width="80" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-30" value="Document Store&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Elasticsearch for storing package information for advanced searching&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ for failover&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="490" y="920" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-27" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="30" y="880" width="290" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-33" value="Datastore&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Postgres&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; - 1 or more read replicas&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Hot standby for failover of instance / upgrades&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;for failover&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="130" y="930" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-34" value="Amazon RDS" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.rds;" vertex="1" parent="1">
+          <mxGeometry x="40" y="920" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-35" value="Amazon ElastiCache" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.elasticache;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1040" width="80" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-36" value="Cache&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Redis in clustered mode to allow scaling&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;for failover&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1040" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-40" value="Amazon API Gateway" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.api_gateway;" vertex="1" parent="1">
+          <mxGeometry x="340" y="110" width="80" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-41" value="Application Load Balancer" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.application_load_balancer;" vertex="1" parent="1">
+          <mxGeometry x="125" y="370" width="80" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-42" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-41" target="qHCFgXvhmrzMCmFW_h6j-40">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="120" y="610" as="sourcePoint" />
+            <mxPoint x="220" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-43" value="Worker Nodes&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Deployed to auto-scaling-group or equivalent&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; - Could be a long running application, or only spun up when required&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; - Scale out/in based on queue sizes&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Multi-AZ for load balancing and failover&lt;/div&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="585" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-44" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.queue;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="343.13" y="570" width="73.5" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-45" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.queue;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="343.38" y="630" width="73.5" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-47" value="Queues for asynchronous processing" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320.06" y="700" width="120.13" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-48" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-27" target="qHCFgXvhmrzMCmFW_h6j-31">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="120" y="610" as="sourcePoint" />
+            <mxPoint x="220" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-49" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="qHCFgXvhmrzMCmFW_h6j-28">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="280" y="880" as="sourcePoint" />
+            <mxPoint x="180" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-50" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
+          <mxGeometry x="500" y="370" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qHCFgXvhmrzMCmFW_h6j-51" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;S3 for object storage&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Storage of packages in S3&lt;/div&gt;&lt;div&gt;- Reference to package stored in datastore&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="370" width="210" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
